@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+
+
+
+<div >
+<h2>Add Teacher From Below List</h2>
+
+<form action="/addteacher" method="POST">
+<ul>
+
+  <% teacher.forEach(function(item){ %>
+<%var counter=0%>
+<%if(user_names.favorite_list.length!=0){%>
+
+<% user_names.favorite_list.forEach(function(element){ %>
+  <%if(item.uniqueid===element)
+  {counter=1%>
+
+
+<%}})%>
+<%}%>
+<%if(counter===0)
+{%>
+  <li><%=item.name%><button class="btn btn-dark btn-sm" name=name value=<%=item.uniqueid%> type="submit">++Add To List</button></li>
+<%}%>
+
+<%})%>
+
+
+
+  </ul>
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

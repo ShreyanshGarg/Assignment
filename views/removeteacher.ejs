@@ -1,0 +1,33 @@
+<%- include('partials/header') %>
+
+
+<div >
+<h2>  Remove A Teacher From Your Favorite List is-:</h2>
+
+<form action="/removeteacher" method="POST">
+  <ul>
+
+  <% user_names.favorite_list.forEach(function(element){ %>
+    <% teacher.forEach(function(item){ %>
+
+  <%if(item.uniqueid===element)
+  {%>
+      <li><%=item.name%><button class="btn btn-dark btn-sm" name=name value=<%=item.uniqueid%> type="submit">--Remove From The List</button></li>
+
+  <%}})%>
+  <%})%>
+
+      </ul>
+  
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

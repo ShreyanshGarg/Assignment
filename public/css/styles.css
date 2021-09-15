@@ -1,0 +1,35 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+.container{
+  padding-top: 50px;
+}
+.center_element{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  margin-top: 10px;
+}
+.image_inside{
+  width: 100px;
+
+    height: 100px;
+}
+.top_header{
+  display: flex;
+  justify-content: space-between;
+}
