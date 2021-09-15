@@ -6,3 +6,14 @@ To setup the project on your local machine:
 4. Install all the dependencie mentioned in package.json file of the project by using npm (npm i dependencie_name).
 5. And run the local server on port 3000.
 ----------------------------------------------------------------------------------------------------------------
+
+Note:
+.env is provided so you can directly run this project no need to create you own .env file
+----------------------------------------------------------------------------------------------------------------
+
+Features Implemented:
++ Designed schema for teacher & user {name,email,phonenumber,password} 
++ Authenticate using JWT
++ Student can add & remove the teacher from their favorite list
++ Find most favorite teacher using MongoDB aggregation
++ Encrypted password using bcrypt library
